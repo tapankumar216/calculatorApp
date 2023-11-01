@@ -3,6 +3,7 @@ package com.example.calculatorapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     fun onEqualClick(view: View) {
 
         onEqual()
-        binding.textView.text = binding.textView2.text.toString().drop(1)
+        binding.textView2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 37.5f)
     }
 
 
