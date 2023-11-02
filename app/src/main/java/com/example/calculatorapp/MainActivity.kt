@@ -108,10 +108,16 @@ class MainActivity : AppCompatActivity() {
             try {
 
                 val result = expression.evaluate()
+                var str = result.toString()
+
+                if(str.endsWith(".0")) {
+                    str = str.replace(".0","")
+                }
+
 
                 binding.textView2.visibility = View.VISIBLE
 
-                binding.textView2.text = "=" + result
+                binding.textView2.text = "=" + str
             } catch (ex: java.lang.ArithmeticException){
 
                 Log.e("evaluate error", ex.toString())
