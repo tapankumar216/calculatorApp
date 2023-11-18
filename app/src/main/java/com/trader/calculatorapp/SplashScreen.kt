@@ -1,4 +1,4 @@
-package com.example.calculatorapp
+package com.trader.calculatorapp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

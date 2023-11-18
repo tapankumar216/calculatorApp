@@ -1,14 +1,12 @@
-package com.example.calculatorapp
+package com.trader.calculatorapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.TypedValue
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
-import androidx.core.view.isGone
-import com.example.calculatorapp.databinding.ActivityMainBinding
+import com.trader.calculatorapp.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.Expression
 import net.objecthunter.exp4j.ExpressionBuilder
 
